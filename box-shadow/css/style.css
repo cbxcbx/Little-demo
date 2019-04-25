@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrap {
+  width: 70%;
+  height: 200px;
+  margin: 50px auto;
+  background: #fff;
+
+}
+
+.wrap h1 {
+  font-size: 20px;
+  line-height: 200px;
+  text-align: center;
+}
+
+.effect {
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0,0,0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -o-box-shadow: 0 1px 4px rgba(0,0,0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect::after,
+.effect::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  bottom: 0;
+  left: 30px;
+  right: 30px;
+  border-radius: 100px/10px;
+  box-shadow: 0 0 40px rgba(0,0,0, 0.8);
+  -webkit-box-shadow: 0 0 40px rgba(0,0,0, 0.8);
+  -moz-box-shadow: 0 0 40px rgba(0,0,0, 0.8);
+  -o-box-shadow: 0 0 40px rgba(0,0,0, 0.8);
+}
+
+.image-box-shadow {
+  width: 996px;
+  height: auto;
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.image-box-shadow li {
+  position: relative;
+  float: left;
+  background: #fff;
+  width: 300px;
+  height: 300px;
+  margin: 20px 15px;
+  border: 1px solid #efefef;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.image-box-shadow li::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  background: transparent;
+  left: 20px;
+  bottom: 10px;
+  width: 88%;
+  height: 80%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  -webkit-transform: skew(-12deg) rotate(-4deg);
+  -ms-transform: skew(-12deg) rotate(-4deg);
+  -moz-transform: skew(-12deg) rotate(-4deg);
+  -o-transform: skew(-12deg) rotate(-4deg);
+}
+
+.image-box-shadow li::after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  background: transparent;
+  left: 15px;
+  bottom: 8px;
+  width: 89%;
+  height: 80%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  -webkit-transform: skew(12deg) rotate(4deg);
+  -ms-transform: skew(12deg) rotate(4deg);
+  -moz-transform: skew(12deg) rotate(4deg);
+  -o-transform: skew(12deg) rotate(4deg);
+}
+
+.image-box-shadow img {
+  display: block;
+  width: 290px;
+  height: 290px;
+  margin: 5px;
+}
